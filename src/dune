@@ -1,0 +1,4 @@
+(executable
+ (name Day1)
+ (public_name day1)
+ (libraries fs.lib fp))

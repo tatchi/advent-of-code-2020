@@ -1,0 +1,6 @@
+{
+  "ocaml.sandbox": {
+    "kind": "esy",
+    "root": "${workspaceFolder:advent-of-code-2020}"
+  }
+}
