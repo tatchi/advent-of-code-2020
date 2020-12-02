@@ -1,4 +1,11 @@
 (executable
  (name Day1)
+ (modules Day1)
  (public_name day1)
+ (libraries fs.lib fp))
+
+(executable
+ (name Day2)
+ (modules Day2)
+ (public_name day2)
  (libraries fs.lib fp))
