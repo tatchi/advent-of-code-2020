@@ -9,3 +9,9 @@
  (modules Day2)
  (public_name day2)
  (libraries fs.lib fp))
+
+(executable
+ (name Day3)
+ (modules Day3)
+ (public_name day3)
+ (libraries fs.lib fp str))
