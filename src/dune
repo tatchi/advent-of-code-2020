@@ -21,3 +21,9 @@
  (modules Day4)
  (public_name day4)
  (libraries fs.lib fp str))
+
+(executable
+ (name Parser)
+ (modules Parser)
+ (public_name parser)
+ (libraries fs.lib fp str angstrom))

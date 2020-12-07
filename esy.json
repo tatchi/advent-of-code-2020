@@ -5,12 +5,10 @@
   "license": "MIT",
   "esy": {
     "build": "dune build -p #{self.name}",
-    "buildDev": "refmterr dune build --promote-install-files --root . --only-package #{self.name}",
+    "buildDev":
+      "refmterr dune build --promote-install-files --root . --only-package #{self.name}",
     "NOTE": "Optional release Section. Customizes result of `esy release`",
-    "release": {
-      "rewritePrefix": true,
-      "bin": ["Bin"]
-    }
+    "release": { "rewritePrefix": true, "bin": [ "Bin" ] }
   },
   "scripts": {
     "test": "esy x Bin",
@@ -18,8 +16,9 @@
     "doc": "esy dune build @doc"
   },
   "dependencies": {
-    "@opam/dune": ">=2.6",
     "@esy-ocaml/reason": ">= 3.6.0 < 4.0.0",
+    "@opam/angstrom": "0.15.0",
+    "@opam/dune": ">=2.6",
     "@reason-native/fp": "*",
     "@reason-native/fs": "*",
     "ocaml": "~4.10.0"
@@ -29,7 +28,9 @@
     "@opam/ocaml-lsp-server": ">= 1.2.0"
   },
   "resolutions": {
-    "@reason-native/fs": "ManasJayanth/reason-native:fs.json#1240e2757a9685473280b9543f6ae2d8bd53c552",
-    "@reason-native/fp": "ManasJayanth/reason-native:fp.json#1240e2757a9685473280b9543f6ae2d8bd53c552"
+    "@reason-native/fs":
+      "ManasJayanth/reason-native:fs.json#1240e2757a9685473280b9543f6ae2d8bd53c552",
+    "@reason-native/fp":
+      "ManasJayanth/reason-native:fp.json#1240e2757a9685473280b9543f6ae2d8bd53c552"
   }
 }
