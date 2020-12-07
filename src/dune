@@ -21,3 +21,9 @@
  (modules Day4)
  (public_name day4)
  (libraries fs.lib fp str))
+
+(executable
+ (name Day5)
+ (modules Day5)
+ (public_name day5)
+ (libraries fs.lib fp str))
